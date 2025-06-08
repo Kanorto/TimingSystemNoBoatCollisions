@@ -1,14 +1,11 @@
 package com.frosthex.timingsystem.noboatcollisions.timingsystem;
 
-import com.frosthex.timingsystem.noboatcollisions.BoatSpawnerExtention;
+import com.frosthex.timingsystem.noboatcollisions.BoatSpawnerExtension;
 import com.frosthex.timingsystem.noboatcollisions.NMSHandler;
 import com.frosthex.timingsystem.noboatcollisions.TimingSystemNoBoatCollisionsPlugin;
 import me.makkuusen.timing.system.api.TimingSystemAPI;
-import me.makkuusen.timing.system.boat.BoatSpawner;
 import org.bukkit.Location;
 import org.bukkit.entity.Boat;
-import org.bukkit.entity.EntityType;
-import org.bukkit.entity.boat.*;
 
 public class TimingSystemReadyManager {
 
@@ -17,7 +14,7 @@ public class TimingSystemReadyManager {
      * This method creates the BoatSpawner expected by the TimingSystemAPI.
      */
     public static void setNMSBoatSpawner() {
-        TimingSystemAPI.setBoatSpawner(new BoatSpawnerExtention() {
+        TimingSystemAPI.setBoatSpawner(new BoatSpawnerExtension() {
             @Override
             public Boat spawnBoat(Location location) {
                 return TimingSystemNoBoatCollisionsPlugin.getNmsHandler().spawnBoat(location);

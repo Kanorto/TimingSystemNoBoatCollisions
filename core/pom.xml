@@ -6,11 +6,11 @@
     <parent>
         <groupId>com.frosthex</groupId>
         <artifactId>TimingSystemNoBoatCollisions</artifactId>
-        <version>1.1-RC1</version>
+        <version>1.2-RC1</version>
     </parent>
 
     <artifactId>TimingSystemNoBoatCollisions-core</artifactId>
-    <version>1.1-RC1</version>
+    <version>1.2-RC1</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -41,12 +41,6 @@
             <artifactId>TimingSystem</artifactId>
             <version>b53d8baad07d5373b7e21bef7b87ff442bb1523b</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
-            <version>1.21.4-R0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 

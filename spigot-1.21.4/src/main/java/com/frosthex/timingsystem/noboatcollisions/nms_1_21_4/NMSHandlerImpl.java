@@ -1,7 +1,7 @@
 package com.frosthex.timingsystem.noboatcollisions.nms_1_21_4;
 
 import com.frosthex.timingsystem.noboatcollisions.NMSHandler;
-import net.minecraft.server.level.WorldServer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.Items;
 import org.apache.commons.lang.NotImplementedException;
 import org.bukkit.Location;
@@ -22,7 +22,7 @@ public class NMSHandlerImpl implements NMSHandler {
 
     @Override
     public org.bukkit.entity.Boat spawnBoat(Location location) {
-        WorldServer level = ((CraftWorld) Objects.requireNonNull(location.getWorld())).getHandle();
+        ServerLevel level = ((CraftWorld) location.getWorld()).getHandle();
         CraftBoat boat;
 
         switch (boatType) {
