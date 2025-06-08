@@ -6,6 +6,8 @@ import org.bukkit.entity.ChestBoat;
 
 public interface NMSHandler {
 
+    default void setBoatType(String entityType) {};
+
     public Boat spawnBoat(Location location);
 
     public ChestBoat spawnChestBoat(Location location);

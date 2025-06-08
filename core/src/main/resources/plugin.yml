@@ -1,5 +1,5 @@
 name: TimingSystemNoBoatCollisions
-version: 1.1-RC1
+version: 1.2-RC1
 main: com.frosthex.timingsystem.noboatcollisions.TimingSystemNoBoatCollisionsPlugin
 api-version: 1.19
 authors: [JustBru00]
